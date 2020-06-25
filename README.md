@@ -1,1 +1,1 @@
-# GoodLife-web-qa-automation
+goodlifefitness-web-goodlifefitness.com-qa-automation
