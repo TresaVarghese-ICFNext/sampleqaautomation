@@ -1,0 +1,1 @@
+# GoodLife-web-qa-automation
