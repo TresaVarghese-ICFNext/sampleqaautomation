@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="GL-Smoke Testcases" verbose="1" >
+
+<test name="TestScriptas">
+    <classes>
+        <class name="TestScripts.LogIn"/>
+        <class name="TestScripts.LogOut"/>
+        <class name="TestScripts.FindAClub"/>
+        <class name="TestScripts.ClassSchedule"/>
+        <class name="TestScripts.MyAccount"/>
+        <class name="TestScripts.BuyMembership"/>
+
+    </classes>
+</test>
+</suite>
