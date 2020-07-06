@@ -108,25 +108,25 @@ public class MyAccountPage extends BasePage {
         Thread.sleep(2000);
         String txt =  driver.findElement(classesLocator).getText();
         Assert.assertEquals(txt, "My booked classes");
+/////////////////////
+        //Verifying Clubs tab and adding clubs favorite list
+        driver.findElement(clubsLocator).click();
+        //wait.until( ExpectedConditions.visibilityOfElementLocated(clubstitleLocator) );
+        Thread.sleep(2000);
+        String txt1 =  driver.findElement(clubstitleLocator).getText();
+        Assert.assertEquals(txt1, "My Clubs");
 
-//        //Verifying Clubs tab and adding clubs favorite list
-//        driver.findElement(clubsLocator).click();
-//        //wait.until( ExpectedConditions.visibilityOfElementLocated(clubstitleLocator) );
-//        Thread.sleep(2000);
-//        String txt1 =  driver.findElement(clubstitleLocator).getText();
-//        Assert.assertEquals(txt1, "My Clubs");
-//
-//        // verify if add icon is displayed or not
-//        if ((driver.findElement(addLocator)).isDisplayed()) {
-//            addclub();
-//        }
-//        else{
-//            //remove one location from the list
-//            driver.findElement(cancelLocator).click();
-//            //wait.until( ExpectedConditions.visibilityOfElementLocated(removeLocator));
-//            Thread.sleep(2000);
-//            driver.findElement(removeLocator).click();
-//        }
+        // verify if add icon is displayed or not
+        if ((driver.findElement(addLocator)).isDisplayed()) {
+            addclub();
+        }
+        else{
+            //remove one location from the list
+            driver.findElement(cancelLocator).click();
+            //wait.until( ExpectedConditions.visibilityOfElementLocated(removeLocator));
+            Thread.sleep(2000);
+            driver.findElement(removeLocator).click();
+        }
 
         //Verify rewards tab
         Thread.sleep(2000);
