@@ -21,10 +21,10 @@ public class LogInPage extends BasePage{
 //    protected final By classesLocator = By.xpath( "//*[@id=\"section_classes\"]/div/div[1]/div[1]" );
 
 
-    By emailLocator  = By.xpath("/html/body/div[1]/div/div[3]/div/div/div/div[2]/form/div[1]/label/input");
+    By emailLocator  = By.className("js-login-email");
     public WebElement emailLocator  () {return driver.findElement(emailLocator );}
 
-    By passwordLocator = By.xpath("/html/body/div[1]/div/div[3]/div/div/div/div[2]/form/div[2]/label/input");
+    By passwordLocator = By.className("js-login-password");
     public WebElement passwordLocator  () {return driver.findElement(passwordLocator);}
 
     By loginbuttonLocator  = By.xpath("/html/body/div[1]/div/div[3]/div/div/div/div[2]/form/div[4]/button");
